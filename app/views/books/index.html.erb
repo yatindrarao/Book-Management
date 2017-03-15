@@ -1,0 +1,10 @@
+<%= link_to "Upload a book", new_book_path %>
+<ul>
+  <% @books.each do |book| %>
+    <li>
+      <p class="title"><%= book.title %></p>
+      <p class="desc"><%= book.description %></p>
+      <p class="author"><%= book.author %></p>
+    </li>
+  <% end %>
+</ul>
