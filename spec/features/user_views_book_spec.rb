@@ -11,8 +11,8 @@ feature "User views book in detail" do
     })
     click_on "5 Musketeers"
 
-    expect(page).to have_content("5 Musketeers")
-    expect(page).to have_content("About story of 5 friends")
-    expect(page).to have_content("Donald Johnson")
+    expect(page).to have_css "h3", text: "5 Musketeers"
+    expect(page).to have_css "h4", text: "Donald Johnson"
+    expect(page).to have_css "p", text: "About story of 5 friends"
   end
 end
