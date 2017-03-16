@@ -6,22 +6,26 @@ feature "User uploads book" do
     create_book({
       title: "3 Musketeers",
       description: "About story of 3 friends",
-      author: "Donald Johnson"
+      author: "Donald Johnson",
+      file_name: "image_1.jpg"
     })
     should_have_content({
       title: "3 Musketeers",
       description: "About story of 3 friends",
-      author: "Donald Johnson"
+      author: "Donald Johnson",
+      file_name: "image_1.jpg"
     })
     create_book({
       title: "3 Idiots",
       description: "About story of collegians",
-      author: "Chetan Bhagat"
+      author: "Chetan Bhagat",
+      file_name: "image_2.jpg"
     })
     should_have_content({
       title: "3 Idiots",
       description: "About story of collegians",
-      author: "Chetan Bhagat"
+      author: "Chetan Bhagat",
+      file_name: "image_2.jpg"
     })
   end
 end

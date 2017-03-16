@@ -4,6 +4,7 @@ module Features
     fill_in 'Title', with: book_details[:title]
     fill_in "Description", with: book_details[:description]
     fill_in "Author", with: book_details[:author]
+    attach_file "Image", Rails.root.join('spec', 'fixtures', 'files', book_details[:file_name])
     click_button "Upload Book"
   end
 

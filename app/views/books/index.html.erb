@@ -5,6 +5,7 @@
       <p class="title"><%= book.title %></p>
       <p class="desc"><%= book.description %></p>
       <p class="author"><%= book.author %></p>
+      <%= image_tag book.cover_image.url %>
     </li>
   <% end %>
 </ul>
