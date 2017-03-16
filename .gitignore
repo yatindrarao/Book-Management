@@ -13,3 +13,6 @@
 
 # Ignore local env file
 local_env.yml
+
+# Ignore pulblic images
+/public/system/*

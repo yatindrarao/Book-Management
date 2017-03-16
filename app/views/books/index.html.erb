@@ -2,7 +2,9 @@
 <ul>
   <% @books.each do |book| %>
     <li>
-      <p class="title"><%= book.title %></p>
+      <p class="title">
+        <%= link_to book.title, book_path(book.id) %>
+      </p>
       <p class="desc"><%= book.description %></p>
       <p class="author"><%= book.author %></p>
       <%= image_tag book.cover_image.url %>
